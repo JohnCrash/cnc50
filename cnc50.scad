@@ -392,7 +392,7 @@ module cnc_place(x=0,y=0,z=0)
 	%translate([0,-450-1,0])
 		cube([300,0.5,500]);
 	//电控箱
-	color("white")
+	color([0,0.8,0.6])
 	translate([-150-50,-450,0])
 	difference()
 	{
@@ -402,4 +402,4 @@ module cnc_place(x=0,y=0,z=0)
 	}
 }
 
-cnc_place(x=300*sin($t*180),y=200*sin($t*180),z=0);
+cnc_place(x=300*sin($t*180),y=200*sin($t*180),z=300*sin($t*180));
